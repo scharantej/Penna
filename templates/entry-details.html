@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Journal Entry Details</title>
+</head>
+<body>
+<h1>Journal Entry Details</h1>
+<h2>{{ entry.title }}</h2>
+<p>{{ entry.body }}</p>
+<p><b>Date:</b> {{ entry.date }}</p>
+<p><b>Tags:</b> {{ entry.tags }}</p>
+<a href="/edit-entry/{{ entry.id }}">Edit</a>
+<a href="/delete-entry/{{ entry.id }}">Delete</a>
+</body>
+</html>
+
